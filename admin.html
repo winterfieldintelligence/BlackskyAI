@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackSky AI — Admin Inbox</title>
+  <link rel="icon" type="image/png" href="assets/faviconbai.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="sidebar-layout" id="adminRoot">
+    <aside class="sidebar">
+      <div class="brand" aria-label="BlackSky AI">
+        <img src="assets/xblogo.png" alt="BlackSky AI logo" />
+      </div>
+      <p class="notice">Incoming business setup requests.</p>
+      <nav>
+        <a href="setup-social-generate.html">Service Setup</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a class="active" href="admin.html">Admin Inbox</a>
+        <a href="index.html">Return Home</a>
+      </nav>
+    </aside>
+
+    <main class="page-main">
+      <h1>Admin inbox</h1>
+      <p class="notice" style="margin: 14px 0 24px;">Review submissions, download blueprints, and confirm payments.</p>
+
+      <div class="form-card">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+          <h2>Client submissions</h2>
+          <button class="button ghost" id="exportCsv">Export CSV</button>
+        </div>
+        <table class="table" style="margin-top: 16px;">
+          <thead>
+            <tr>
+              <th>Business</th>
+              <th>Service</th>
+              <th>Plan</th>
+              <th>Amount</th>
+              <th>Payment</th>
+              <th>Blueprint</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="adminSubmissions"></tbody>
+        </table>
+        <div class="notice" id="adminEmpty" style="margin-top: 12px;">No submissions yet.</div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

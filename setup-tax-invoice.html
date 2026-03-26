@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackSky AI — Tax Invoice Automation</title>
+  <link rel="icon" type="image/png" href="assets/faviconbai.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="sidebar-layout">
+    <aside class="sidebar">
+      <div class="brand" aria-label="BlackSky AI">
+        <img src="assets/xblogo.png" alt="BlackSky AI logo" />
+      </div>
+      <p class="notice">Automate branded tax invoice creation.</p>
+      <nav>
+        <a href="setup-social-generate.html">Social (Generate + Post)</a>
+        <a href="setup-social-post.html">Social (Post Only)</a>
+        <a href="setup-whatsapp.html">WhatsApp</a>
+        <a href="setup-leads.html">Lead Gen + Email</a>
+        <a href="setup-sales-call.html">AI Sales Calls</a>
+        <a class="active" href="setup-tax-invoice.html">Tax Invoices</a>
+        <a href="index.html">Return Home</a>
+      </nav>
+    </aside>
+
+    <main class="page-main">
+      <h1>Tax Invoice Automation</h1>
+      <p class="notice" style="margin: 12px 0 22px;">Your setup will be sent to admin. The blueprint JSON will be available for download in Admin Inbox.</p>
+
+      <div class="notice service-switcher">
+        <label for="serviceSwitch">Select service</label>
+        <select id="serviceSwitch" data-service-switch>
+          <option value="setup-social-generate.html">Social Media (Generate + Post)</option>
+          <option value="setup-social-post.html">Social Media (Post Only)</option>
+          <option value="setup-whatsapp.html">WhatsApp Automation</option>
+          <option value="setup-leads.html">Lead Generation & Cold Email</option>
+          <option value="setup-sales-call.html">AI Sales Call Manager</option>
+          <option value="setup-tax-invoice.html" selected>Tax Invoice Automation</option>
+        </select>
+      </div>
+      <form class="form-card blueprint-form" data-service="tax_invoice">
+        <h2>Business profile</h2>
+        <div class="form-grid" style="margin-top: 16px;">
+          <div>
+            <label for="business_name">Business name *</label>
+            <input id="business_name" name="business_name" required />
+          </div>
+          <div>
+            <label for="legal_name">Legal name *</label>
+            <input id="legal_name" name="legal_name" required />
+          </div>
+          <div>
+            <label for="contact_email">Contact email *</label>
+            <input id="contact_email" name="contact_email" type="email" required />
+          </div>
+          <div>
+            <label for="tax_id">Tax ID / GSTIN</label>
+            <input id="tax_id" name="tax_id" />
+          </div>
+          <div>
+            <label for="invoice_prefix">Invoice prefix</label>
+            <input id="invoice_prefix" name="invoice_prefix" placeholder="INV-" />
+          </div>
+          <div>
+            <label for="address">Business address</label>
+            <input id="address" name="address" />
+          </div>
+          <div>
+            <label for="logo_url">Logo URL</label>
+            <input id="logo_url" name="logo_url" />
+          </div>
+          <div>
+            <label for="bank_details">Bank / UPI details</label>
+            <input id="bank_details" name="bank_details" />
+          </div>
+          <div>
+            <label for="default_tax_rate">Default tax rate</label>
+            <input id="default_tax_rate" name="default_tax_rate" placeholder="18%" />
+          </div>
+          <div>
+            <label for="payment_terms">Payment terms</label>
+            <input id="payment_terms" name="payment_terms" placeholder="Due on receipt" />
+          </div>
+        </div>
+        <div style="margin-top: 16px;">
+          <label for="invoice_notes">Invoice notes</label>
+          <textarea id="invoice_notes" name="invoice_notes" rows="3"></textarea>
+        </div>
+
+        <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button primary" type="submit">Continue</button>
+          <a class="button ghost" href="index.html">Back to home</a>
+        </div>
+        <p class="notice" id="blueprintStatus" style="margin-top: 12px;"></p>
+      </form>
+    </main>
+  </div>
+
+  <script src="js/blueprint.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

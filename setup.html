@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackSky AI — Setup</title>
+  <link rel="icon" type="image/png" href="assets/faviconbai.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="sidebar-layout">
+    <aside class="sidebar">
+      <div class="brand" aria-label="BlackSky AI">
+        <img src="assets/xblogo.png" alt="BlackSky AI logo" />
+      </div>
+      <p class="notice">Premium onboarding for your automation suite.</p>
+      <nav>
+        <a class="active" href="setup.html">Service Setup</a>
+        <a href="dashboard.html">Dashboard Preview</a>
+        <a href="admin.html">Admin Inbox</a>
+        <a href="index.html">Return Home</a>
+      </nav>
+    </aside>
+
+    <main class="page-main">
+      <h1>Business setup</h1>
+      <p class="notice" style="margin: 14px 0 24px;">Selected services: <span id="setupSelectedServices"></span></p>
+
+      <div class="stepper">
+        <div class="step active">Step 1 · Business Profile</div>
+        <div class="step">Step 2 · Plan & Payment</div>
+      </div>
+
+      <form id="setupForm" class="form-card">
+        <h2>Business essentials</h2>
+        <div class="form-grid" style="margin-top: 18px;">
+          <div>
+            <label for="business_name">Business name</label>
+            <input id="business_name" name="business_name" placeholder="Ex: Horizon Foods" required />
+          </div>
+          <div>
+            <label for="business_category">Business category</label>
+            <input id="business_category" name="business_category" placeholder="Ex: Restaurant, Real Estate" required />
+          </div>
+          <div>
+            <label for="website">Website</label>
+            <input id="website" name="website" placeholder="https://" />
+          </div>
+          <div>
+            <label for="location">City & country</label>
+            <input id="location" name="location" placeholder="Mumbai, India" />
+          </div>
+          <div>
+            <label for="contact_name">Primary contact name</label>
+            <input id="contact_name" name="contact_name" placeholder="Owner or marketing head" required />
+          </div>
+          <div>
+            <label for="contact_email">Contact email</label>
+            <input id="contact_email" name="contact_email" placeholder="name@company.com" type="email" required />
+          </div>
+          <div>
+            <label for="brand_voice">Brand voice</label>
+            <input id="brand_voice" name="brand_voice" placeholder="Luxury, confident, minimal" />
+          </div>
+          <div>
+            <label for="target_audience">Target audience</label>
+            <input id="target_audience" name="target_audience" placeholder="Founders, premium buyers, SaaS" />
+          </div>
+        </div>
+        <div style="margin-top: 22px;">
+          <label for="social_mode">Social media automation mode</label>
+          <select id="social_mode" name="social_mode">
+            <option>Post only (content already generated)</option>
+            <option>Generate + Post (AI content + automation)</option>
+          </select>
+        </div>
+        <div style="margin-top: 18px;">
+          <label for="platforms">Platforms + posting notes</label>
+          <textarea id="platforms" name="platforms" rows="4" placeholder="Instagram daily, LinkedIn 3x week, YouTube Shorts, etc."></textarea>
+        </div>
+        <div style="margin-top: 26px;">
+          <h3>Social access details (optional)</h3>
+          <p class="notice" style="margin-top: 10px;">Do not paste passwords. Access tokens can be stored in Make Data Store instead of the public sheet.</p>
+          <div class="form-grid" style="margin-top: 16px;">
+            <div>
+              <label for="instagram_id">Instagram Business ID</label>
+              <input id="instagram_id" name="instagram_id" placeholder="Instagram business ID" />
+            </div>
+            <div>
+              <label for="instagram_token">Instagram Access Token</label>
+              <input id="instagram_token" name="instagram_token" placeholder="Long-lived token" />
+            </div>
+            <div>
+              <label for="facebook_page_id">Facebook Page ID</label>
+              <input id="facebook_page_id" name="facebook_page_id" placeholder="Facebook page ID" />
+            </div>
+            <div>
+              <label for="facebook_token">Facebook Access Token</label>
+              <input id="facebook_token" name="facebook_token" placeholder="Page access token" />
+            </div>
+            <div>
+              <label for="youtube_channel_id">YouTube Channel ID</label>
+              <input id="youtube_channel_id" name="youtube_channel_id" placeholder="YouTube channel ID" />
+            </div>
+            <div>
+              <label for="youtube_refresh_token">YouTube Refresh Token</label>
+              <input id="youtube_refresh_token" name="youtube_refresh_token" placeholder="OAuth refresh token" />
+            </div>
+            <div>
+              <label for="linkedin_org_id">LinkedIn Org ID</label>
+              <input id="linkedin_org_id" name="linkedin_org_id" placeholder="LinkedIn organization ID" />
+            </div>
+            <div>
+              <label for="linkedin_token">LinkedIn Access Token</label>
+              <input id="linkedin_token" name="linkedin_token" placeholder="Access token" />
+            </div>
+            <div>
+              <label for="x_handle">X (Twitter) Handle</label>
+              <input id="x_handle" name="x_handle" placeholder="@company" />
+            </div>
+            <div>
+              <label for="x_token">X Access Token</label>
+              <input id="x_token" name="x_token" placeholder="Access token" />
+            </div>
+            <div>
+              <label for="pinterest_account_id">Pinterest Account ID</label>
+              <input id="pinterest_account_id" name="pinterest_account_id" placeholder="Pinterest account ID" />
+            </div>
+            <div>
+              <label for="pinterest_token">Pinterest Access Token</label>
+              <input id="pinterest_token" name="pinterest_token" placeholder="Access token" />
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button primary" type="submit">Continue to Plans</button>
+          <a class="button ghost" href="index.html">Back to services</a>
+        </div>
+      </form>
+
+      <section id="planSection" class="hidden">
+        <div class="form-card">
+          <h2>Select a plan</h2>
+          <p class="notice" style="margin: 10px 0 18px;">Pricing is shown in INR. You can upgrade anytime.</p>
+          <div class="plan-grid">
+            <div class="plan-card" data-plan="Starter">
+              <h4>Starter</h4>
+              <div class="price">₹12,000</div>
+              <ul>
+                <li>1–2 services active</li>
+                <li>Weekly optimization</li>
+                <li>Email support</li>
+              </ul>
+            </div>
+            <div class="plan-card" data-plan="Growth">
+              <h4>Growth</h4>
+              <div class="price">₹24,000</div>
+              <ul>
+                <li>Up to 4 services active</li>
+                <li>Daily insights</li>
+                <li>Priority support</li>
+              </ul>
+            </div>
+            <div class="plan-card selected" data-plan="Executive">
+              <h4>Executive</h4>
+              <div class="price">₹45,000</div>
+              <ul>
+                <li>All services active</li>
+                <li>Dedicated automation manager</li>
+                <li>24/7 monitoring</li>
+              </ul>
+            </div>
+          </div>
+          <div style="margin-top: 18px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <button class="button primary activate-now" type="button">Submit Setup</button>
+            <span class="notice" id="paymentStatus">Setup saved. Payment integration will be added later.</span>
+          </div>
+        </div>
+
+        <div class="form-card">
+          <h2>Payment (Coming Soon)</h2>
+          <p class="notice" style="margin: 10px 0 18px;">Stripe checkout will be added in the next phase. For now, we will save your plan and activate manually.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackSky AI — Payment</title>
+  <link rel="icon" type="image/png" href="assets/faviconbai.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-luxe">
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand" aria-label="BlackSky AI">
+        <img src="assets/xblogo.png" alt="BlackSky AI logo" />
+      </div>
+      <button class="mobile-toggle" id="navToggle">Menu</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#case-studies">Case Studies</a>
+        <a class="nav-cta" href="setup-social-generate.html">Create Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section container" id="paymentRoot">
+    <h1>Complete your payment</h1>
+    <p class="notice">Service: <strong id="paymentServiceName">Loading...</strong> | Plan: <strong id="paymentPlanName">Loading...</strong></p>
+
+    <div class="payment-layout">
+      <div class="payment-card">
+        <h2>Scan & Pay</h2>
+        <div class="qr-box">
+          <img src="assets/OR.jpeg" alt="UPI QR code" />
+        </div>
+        <p>Pay exactly <strong id="paymentAmountLabel">₹0</strong> using UPI.</p>
+        <p class="notice" style="margin-top: 12px;">After payment, upload the screenshot on the right.</p>
+      </div>
+
+      <div class="payment-card">
+        <h2>Upload payment proof</h2>
+        <div style="margin-top: 12px;">
+          <label for="paymentAmount">Amount paid</label>
+          <input id="paymentAmount" type="number" readonly />
+        </div>
+        <div style="margin-top: 12px;">
+          <label for="paymentScreenshot">UPI screenshot</label>
+          <input id="paymentScreenshot" type="file" accept="image/*" />
+        </div>
+        <div class="payment-preview" id="paymentPreviewWrap">
+          <img id="paymentPreview" alt="Payment preview" />
+        </div>
+        <button class="button primary" id="submitPayment" style="margin-top: 12px;">Submit payment</button>
+        <p class="notice" id="paymentStatus" style="margin-top: 12px;"></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

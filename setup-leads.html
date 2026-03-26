@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackSky AI — Lead Gen + Cold Email</title>
+  <link rel="icon" type="image/png" href="assets/faviconbai.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="sidebar-layout">
+    <aside class="sidebar">
+      <div class="brand" aria-label="BlackSky AI">
+        <img src="assets/xblogo.png" alt="BlackSky AI logo" />
+      </div>
+      <p class="notice">Capture leads and launch cold email sequences.</p>
+      <nav>
+        <a href="setup-social-generate.html">Social (Generate + Post)</a>
+        <a href="setup-social-post.html">Social (Post Only)</a>
+        <a href="setup-whatsapp.html">WhatsApp</a>
+        <a class="active" href="setup-leads.html">Lead Gen + Email</a>
+        <a href="setup-sales-call.html">AI Sales Calls</a>
+        <a href="setup-tax-invoice.html">Tax Invoices</a>
+        <a href="index.html">Return Home</a>
+      </nav>
+    </aside>
+
+    <main class="page-main">
+      <h1>Lead Generation + Cold Email</h1>
+      <p class="notice" style="margin: 12px 0 22px;">Your setup will be sent to admin. The blueprint JSON will be available for download in Admin Inbox.</p>
+
+      <div class="notice service-switcher">
+        <label for="serviceSwitch">Select service</label>
+        <select id="serviceSwitch" data-service-switch>
+          <option value="setup-social-generate.html">Social Media (Generate + Post)</option>
+          <option value="setup-social-post.html">Social Media (Post Only)</option>
+          <option value="setup-whatsapp.html">WhatsApp Automation</option>
+          <option value="setup-leads.html" selected>Lead Generation & Cold Email</option>
+          <option value="setup-sales-call.html">AI Sales Call Manager</option>
+          <option value="setup-tax-invoice.html">Tax Invoice Automation</option>
+        </select>
+      </div>
+      <form class="form-card blueprint-form" data-service="lead_email">
+        <h2>Business profile</h2>
+        <div class="form-grid" style="margin-top: 16px;">
+          <div>
+            <label for="business_name">Business name *</label>
+            <input id="business_name" name="business_name" required />
+          </div>
+          <div>
+            <label for="business_category">Business category *</label>
+            <input id="business_category" name="business_category" required />
+          </div>
+          <div>
+            <label for="website">Website</label>
+            <input id="website" name="website" />
+          </div>
+          <div>
+            <label for="contact_name">Contact name *</label>
+            <input id="contact_name" name="contact_name" required />
+          </div>
+          <div>
+            <label for="contact_email">Contact email *</label>
+            <input id="contact_email" name="contact_email" type="email" required />
+          </div>
+        </div>
+
+        <h2 style="margin-top: 24px;">Lead engine setup</h2>
+        <div style="margin-top: 12px;">
+          <label for="ideal_customer_profile">Ideal customer profile</label>
+          <textarea id="ideal_customer_profile" name="ideal_customer_profile" rows="3"></textarea>
+        </div>
+        <div class="form-grid" style="margin-top: 16px;">
+          <div>
+            <label for="lead_sources">Lead sources</label>
+            <input id="lead_sources" name="lead_sources" placeholder="CSV, LinkedIn, Website" />
+          </div>
+          <div>
+            <label for="sender_domain">Sender domain</label>
+            <input id="sender_domain" name="sender_domain" placeholder="company.com" />
+          </div>
+          <div>
+            <label for="sender_inboxes">Sender inboxes</label>
+            <input id="sender_inboxes" name="sender_inboxes" placeholder="sales@, growth@" />
+          </div>
+          <div>
+            <label for="daily_sending_limit">Daily sending limit</label>
+            <input id="daily_sending_limit" name="daily_sending_limit" placeholder="50" />
+          </div>
+        </div>
+        <div style="margin-top: 16px;">
+          <label for="sequence_steps">Sequence steps</label>
+          <textarea id="sequence_steps" name="sequence_steps" rows="3" placeholder="Day 1 intro, Day 3 follow-up"></textarea>
+        </div>
+        <div class="form-grid" style="margin-top: 16px;">
+          <div>
+            <label for="personalization_fields">Personalization fields</label>
+            <input id="personalization_fields" name="personalization_fields" placeholder="First name, company" />
+          </div>
+          <div>
+            <label for="unsubscribe_method">Unsubscribe handling</label>
+            <input id="unsubscribe_method" name="unsubscribe_method" placeholder="Link in email" />
+          </div>
+        </div>
+
+        <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button primary" type="submit">Continue</button>
+          <a class="button ghost" href="index.html">Back to home</a>
+        </div>
+        <p class="notice" id="blueprintStatus" style="margin-top: 12px;"></p>
+      </form>
+    </main>
+  </div>
+
+  <script src="js/blueprint.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

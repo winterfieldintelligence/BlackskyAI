@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackSky AI — Business Automation Suite</title>
+  <link rel="icon" type="image/png" href="assets/faviconbai.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-luxe">
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand" aria-label="BlackSky AI">
+        <img src="assets/xblogo.png" alt="BlackSky AI logo" />
+      </div>
+      <button class="mobile-toggle" id="navToggle">Menu</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="refund.html">Refund Policy</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#case-studies">Case Studies</a>
+        <a class="nav-cta" href="index.html#services">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-image" aria-label="BlackSky AI hero">
+    <div class="hero-overlay">
+      <h1>Automate Your Business Fully with AI</h1>
+      <a class="hero-create" href="index.html#services">Get Started</a>
+    </div>
+  </section>
+
+  <section id="services" class="section container">
+    <h2>Choose the services you want to activate</h2>
+    <p>Tap the services below to build your custom automation suite.</p>
+    <p class="notice" id="selectedCount" style="margin-top: 10px;">0 services selected</p>
+    <div class="service-grid">
+      <div class="service-card" data-service="Social Media (Generate + Post)">
+        <div class="service-thumb">
+          <img src="assets/s1.png" alt="Social media automation preview" />
+        </div>
+        <h4>Social Media (Generate + Post)</h4>
+        <p>AI content creation plus automated posting across Instagram, YouTube, LinkedIn, X, Pinterest, and Facebook.</p>
+        <div class="card-action">
+          <span>AI content + scheduling</span>
+          <label class="service-select">
+            <input type="checkbox" class="service-check" />
+            <span>Select</span>
+          </label>
+        </div>
+      </div>
+      <div class="service-card" data-service="Social Media (Post Only)">
+        <div class="service-thumb">
+          <img src="assets/s2.png" alt="Social media posting preview" />
+        </div>
+        <h4>Social Media (Post Only)</h4>
+        <p>Already have content? Automate posting and scheduling across all platforms.</p>
+        <div class="card-action">
+          <span>Content already ready</span>
+          <label class="service-select">
+            <input type="checkbox" class="service-check" />
+            <span>Select</span>
+          </label>
+        </div>
+      </div>
+      <div class="service-card" data-service="WhatsApp Automation">
+        <div class="service-thumb">
+          <img src="assets/s3.png" alt="WhatsApp automation preview" />
+        </div>
+        <h4>WhatsApp Automations</h4>
+        <p>Automate customer support, sales follow‑ups, and order confirmations with templates.</p>
+        <div class="card-action">
+          <span>Chat + follow‑ups</span>
+          <label class="service-select">
+            <input type="checkbox" class="service-check" />
+            <span>Select</span>
+          </label>
+        </div>
+      </div>
+      <div class="service-card" data-service="Lead Generation & Cold Email">
+        <div class="service-thumb">
+          <img src="assets/s4.png" alt="Lead generation automation preview" />
+        </div>
+        <h4>Lead Generation & Cold Email</h4>
+        <p>Capture leads, qualify them, and launch multi‑step cold email sequences automatically.</p>
+        <div class="card-action">
+          <span>Pipeline acceleration</span>
+          <label class="service-select">
+            <input type="checkbox" class="service-check" />
+            <span>Select</span>
+          </label>
+        </div>
+      </div>
+      <div class="service-card" data-service="AI Sales Call Manager">
+        <div class="service-thumb">
+          <img src="assets/s5.png" alt="AI sales call automation preview" />
+        </div>
+        <h4>AI Sales Call Manager</h4>
+        <p>Turn every inquiry into a scheduled, scripted, and intelligently scored sales call.</p>
+        <div class="card-action">
+          <span>Qualification + booking</span>
+          <label class="service-select">
+            <input type="checkbox" class="service-check" />
+            <span>Select</span>
+          </label>
+        </div>
+      </div>
+      <div class="service-card" data-service="Tax Invoice Automation">
+        <div class="service-thumb">
+          <img src="assets/s6.png" alt="Tax invoice automation preview" />
+        </div>
+        <h4>Tax Invoice Automation</h4>
+        <p>Generate branded invoices with GST, UPI, and bank details instantly after each transaction.</p>
+        <div class="card-action">
+          <span>Auto PDF + send</span>
+          <label class="service-select">
+            <input type="checkbox" class="service-check" />
+            <span>Select</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="hero-actions">
+        <a class="button primary" href="selected-services.html" id="continueServices">Continue</a>
+        <a class="button ghost" href="#process">View Setup Flow</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="section container">
+    <h2>Three‑step premium onboarding</h2>
+    <p>We make automation feel effortless and premium — from setup to activation.</p>
+    <div class="service-grid">
+      <div class="service-card">
+        <h4>1. Choose your services</h4>
+        <p>Select what you need today. Upgrade anytime as your business scales.</p>
+      </div>
+      <div class="service-card">
+        <h4>2. Configure your brand</h4>
+        <p>Share your business profile, voice, and platforms. We tailor everything instantly.</p>
+      </div>
+      <div class="service-card">
+        <h4>3. Activate & scale</h4>
+        <p>Choose a plan, pay via Stripe, and your automation suite goes live.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="trust" class="section container">
+    <h2>Why Choose us?</h2>
+    
+    <div class="stats-row">
+      <div class="stat-card">
+        <h3>120k Subscribers</h3>
+        <span>Achieved 121K+ Subscribers on YouTube Distractions AI</span>
+      </div>
+      <div class="stat-card">
+        <h3>100 Million+ </h3>
+        <span>Total Views Gain</span>
+      </div>
+      <div class="stat-card">
+        <h3>50+ businesses</h3>
+        <span>Working  with 50+ businesses globally based in the Dubai - UAE, USA, UK, Canada, and Singapore</span>
+      </div>
+       <div class="stat-card">
+        <h3>Corporate Registered Firm</h3>
+        <span>Winterfield Intelligence Pvt. Ltd.
+       CIN:  U62099MH2023PTC411466</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="case-studies" class="section container">
+    <h2>Client case studies</h2>
+    <p>Ten brands already scaled with BlackSky AI. Luxury outcomes, measurable results.</p>
+    <div class="case-grid">
+      <div class="case-card">
+        <div class="case-header">
+          <img src="assets/c1.png" alt="Distractions AI logo" />
+          <div>
+            <h4>Distractions AI</h4>
+            <span>AI Education App</span>
+             <span>Mumbai India</span>
+          </div>
+        </div>
+        <p class="case-summary">We began our working with Distractions AI from October 9, 2022 by implementing our signature strategy of unique content creation, understanding target audience  and effective metadata optimization. Within just 9 months, Distractions AI reached a major milestone of 100k subscribers on YouTube. This rapid growth translated directly into revenue, with the business now generating a 6-7 figure income. Our approach not only boosted engagement but also positioned Distractions AI as a key player in the industry.</p>
+        <div class="case-block">
+          <h5>Services offered</h5>
+          <ul class="case-list">
+            <li>Social Media AI (Generate + Post)</li>
+            <li>WhatsApp Automation</li>
+            <li>Lead Generation & Cold Email</li>
+            <li>Tax Invoice Automation</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <h5>Results</h5>
+          <ul class="case-list">
+            <li>120k+ Subscribers on YouTube</li>
+            <li>Total Views Gain 80 Million+</li>
+            <li>+220% engagement growth</li>
+            <li>4x lead capture rate</li>
+          </ul>
+        </div>
+        <div class="case-proof-grid">
+          <button class="proof-link" type="button" data-full="assets/sd1.png"><img src="assets/sd1.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/sd2.png"><img src="assets/sd2.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/sd3.png"><img src="assets/sd3.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/sd4.png"><img src="assets/sd4.png" alt="Client proof screenshot" /></button>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-header">
+          <img src="assets/cc2.png" alt="Olivier Dolz Wedding logo" class="case-logo-full" />
+          <div>
+            <h4>Olivier Dolz Wedding</h4>
+            <span>Top 100 Wedding Planner</span>
+            <span>Dubai, United Arab Emirates</span>
+          </div>
+        </div>
+        <p class="case-summary">We started working with Olivier Dolz Weddings, one of the top 10 wedding planners in the world, based in Dubai, UAE, on June 27, 2024. With 106k Instagram followers, we helped make their social media more professional and consistent. Using our unique content and growth strategies, we generating over 10 million views monthly, strengthening their position in the ultra-luxury wedding industry.</p>
+        <div class="case-block">
+          <h5>Services offered</h5>
+          <ul class="case-list">
+            <li>Social Media AI (Generate + Post)</li>
+            <li>Lead Generation & Cold Email</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <h5>Results</h5>
+          <ul class="case-list">
+            <li>106k Instagram Followers</li>
+            <li>+180% reach</li>
+            <li>10+ Million Views Gain</li>
+            <li>Improve Professional Presence</li>
+          </ul>
+        </div>
+        <div class="case-proof-grid">
+          <button class="proof-link" type="button" data-full="assets/so1.png"><img src="assets/so1.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/so2.png"><img src="assets/so2.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/so3.png"><img src="assets/so3.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/so4.png"><img src="assets/so4.png" alt="Client proof screenshot" /></button>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-header">
+          <img src="assets/ccc2.png" alt="LifeTime Fitness logo" class="case-logo-full" />
+          <div>
+            <h4>LifeTime Fitness Store</h4>
+            <span>GYM Equipment </span>
+            <span>Dubai, United Arab Emirates </span>
+          </div>
+        </div>
+        <p class="case-summary">We began working with LifeTime Fitness Store on June 27, 2024. A GYM Equipment Store, based in Dubai, UAE, with 2.7k Instagram followers that increase to 5k followers, relied on us to enhance their social media. Through consistent, high-quality influencer marketing and unique strategies, we generating over 1 million views monthly and increase their customer footfall in the store and website visits.</p>
+        <div class="case-block">
+          <h5>Services offered</h5>
+          <ul class="case-list">
+            <li>Social Media AI (Post Only)</li>
+            <li>WhatsApp Automation</li>
+            <li>Lead Generation & Cold Email</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <h5>Results</h5>
+          <ul class="case-list">
+            <li>2.7k to 5k Followers Growth</li>
+            <li>1 million views monthly</li>
+            <li>2.8x booked calls</li>
+            <li>+150% inquiries</li>
+          </ul>
+        </div>
+        <div class="case-proof-grid">
+          <button class="proof-link" type="button" data-full="assets/sl1.png"><img src="assets/sl1.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/sl2.png"><img src="assets/sl2.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/sl3.png"><img src="assets/sl3.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/sl4.png"><img src="assets/sl4.png" alt="Client proof screenshot" /></button>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-header">
+          <img src="assets/sofalogo.png" alt="The Sofa Makers logo" class="case-logo-full" />
+          <div>
+            <h4>The Sofa Makers </h4>
+            <span> E-Commerce Furniture </span>
+            <span> Dubai, United Arab Emirates </span>
+          </div>
+        </div>
+        <p class="case-summary">We began working with The Sofa Makers on September 13, 2024. A newly started premium sofa and furniture company, based in Dubai, UAE, with 20 Instagram followers, relied on us to enhance their social media. Through consistent, high-quality influencer marketing and unique strategies to kick start the business, we generating over 10k views monthly and kick start their sales growth.</p>
+        <div class="case-block">
+          <h5>Services offered</h5>
+          <ul class="case-list">
+            <li>Social Media AI (Generate + Post)</li>
+            <li>Lead Generation & Cold Email</li>
+      
+          </ul>
+        </div>
+        <div class="case-block">
+          <h5>Results</h5>
+          <ul class="case-list">
+            <li>10k views monthly</li>
+            <li>4.2x inbound leads</li>
+            <li>62% reply rate</li>
+           
+          </ul>
+        </div>
+        <div class="case-proof-grid">
+          <button class="proof-link" type="button" data-full="assets/sofa1.png"><img src="assets/sofa1.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/sofa2.png"><img src="assets/sofa2.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/sofa3.png"><img src="assets/sofa3.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/sofa4.png"><img src="assets/sofa4.png" alt="Client proof screenshot" /></button>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-header">
+          <img src="assets/dailogo.png" alt="DIA Developments logo" class="case-logo-full" />
+          <div>
+            <h4>DIA Developments</h4>
+            <span>Real Estate</span>
+            <span>Dubai, United Arab Emirates</span>
+          </div>
+        </div>
+        <p class="case-summary">Since August 9, 2025, we’ve been managing the social media of DIA Developments, a real estate company in Dubai, UAE. With 2.6k Instagram followers to 19k followers growth, we provided professional VFX CGI content and growth strategies that resulted in over 5 million views reach monthly and increase their real estate clients, securing their place among the best in the real estate market.</p>
+        <div class="case-block">
+          <h5>Services offered</h5>
+          <ul class="case-list">
+            <li>Social Media AI (Generate + Post)</li>
+            
+          </ul>
+        </div>
+        <div class="case-block">
+          <h5>Results</h5>
+          <ul class="case-list">
+            <li>2.6k to 19k Instagram Followers Growth </li>
+            <li>3.1x inquiries</li>
+            <li>60% reply rate</li>
+            <li>26 hours saved per month</li>
+          </ul>
+        </div>
+        <div class="case-proof-grid">
+          <button class="proof-link" type="button" data-full="assets/dia1.png"><img src="assets/dia1.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/dia2.png"><img src="assets/dia2.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/dia3.png"><img src="assets/dia3.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/dia4.png"><img src="assets/dia4.png" alt="Client proof screenshot" /></button>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-header">
+          <img src="assets/autologo.png" alt="4 Auto Car Rental logo" class="case-logo-full" />
+          <div>
+            <h4>4 Auto Car Rental </h4>
+            <span>Luxury Car Rental</span>
+            <span>Dubai, United Arab Emirates</span>
+          </div>
+        </div>
+        <p class="case-summary">On November 14, 2024, we started our collaboration with 4 Auto Luxury Car Rental,  located in Dubai, UAE. With 22.8k Instagram followers, our consistent, high-quality content helped generate over 10 million views and doubled their luxury car booking growth, making their brand even stronger in the luxury car rental segment.</p>
+        <div class="case-block">
+          <h5>Services offered</h5>
+          <ul class="case-list">
+            <li>Social Media AI (Generate + Post)</li>
+            <li>Lead Generation & Cold Email</li>
+            <li>WhatsApp Automation</li>
+           
+          </ul>
+        </div>
+        <div class="case-block">
+          <h5>Results</h5>
+          <ul class="case-list">
+            <li>24k+ Instagram Followers</li>
+            <li>3.7x trials booked</li>
+            <li>66% response rate</li>
+            <li>+210% engagement</li>
+          </ul>
+        </div>
+        <div class="case-proof-grid">
+          <button class="proof-link" type="button" data-full="assets/auto1.png"><img src="assets/auto1.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/auto2.png"><img src="assets/auto2.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/auto3.png"><img src="assets/auto3.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/auto4.png"><img src="assets/auto4.png" alt="Client proof screenshot" /></button>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-header">
+          <img src="assets/dalogo.png" alt="Da Claudio logo" class="case-logo-full" />
+          <div>
+            <h4>Da Claudio </h4>
+            <span>Restaurant</span>
+            <span>Dubai, United Arab Emirates</span>
+          </div>
+        </div>
+        <p class="case-summary">Da Claudio NYC, a premier Italian restaurant in NYC,  joined hands with us on September 5, 2024. With 8.5k Instagram followers, we revamped their social media presence with high-quality content. Our efforts led to over 800k views monthly and a growth in restaurant footfall, solidifying their reputation in the Italian restaurant.</p>
+        <div class="case-block">
+          <h5>Services offered</h5>
+          <ul class="case-list">
+            <li>Social Media AI (Post Only)</li>
+            <li>Lead Generation & Cold Email</li>
+            <li>WhatsApp Automation</li>
+           
+          </ul>
+        </div>
+        <div class="case-block">
+          <h5>Results</h5>
+          <ul class="case-list">
+            <li>+170% reach</li>
+            <li>2.9x qualified leads</li>
+            <li>59% reply rate</li>
+            <li>22 hours saved per month</li>
+          </ul>
+        </div>
+        <div class="case-proof-grid">
+          <button class="proof-link" type="button" data-full="assets/da1.png"><img src="assets/da1.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/da2.png"><img src="assets/da2.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/da3.png"><img src="assets/da3.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/da4.png"><img src="assets/da4.png" alt="Client proof screenshot" /></button>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-header">
+          <img src="assets/tukalogo.png" alt="Tuka Dubai logo" class="case-logo-full" />
+          <div>
+            <h4>Tuka Dubai </h4>
+            <span>Furniture</span>
+            <span>Dubai, United Arab Emirates</span>
+          </div>
+        </div>
+        <p class="case-summary">Since July 21, 2024, we’ve worked with Tuka Duabi, a globally luxury Furniture company based in Dubai, UAE. With 17.2k Instagram followers, we transformed their social media presence, delivering over 1 million views monthly Additionally, our innovative strategies resulted in a 2x increase in their sales, positioning them as an industry leader.</p>
+        <div class="case-block">
+          <h5>Services offered</h5>
+          <ul class="case-list">
+            <li>Lead Generation & Cold Email</li>
+            <li>WhatsApp Automation</li>
+            <li>AI Sales Call Manager</li>
+            <li>Tax Invoice Automation</li>
+          </ul>
+        </div>
+        <div class="case-block">
+          <h5>Results</h5>
+          <ul class="case-list">
+            <li>+130% inquiries</li>
+            <li>2.4x pipeline growth</li>
+            <li>57% reply rate</li>
+            <li>35 hours saved per month</li>
+          </ul>
+        </div>
+        <div class="case-proof-grid">
+          <button class="proof-link" type="button" data-full="assets/tuka1.png"><img src="assets/tuka1.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/tuka2.png"><img src="assets/tuka2.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/tuka3.png"><img src="assets/tuka3.png" alt="Client proof screenshot" /></button>
+          <button class="proof-link" type="button" data-full="assets/tuka4.png"><img src="assets/tuka4.png" alt="Client proof screenshot" /></button>
+        </div>
+      </div>
+      
+  </section>
+
+  <footer class="footer container">
+    <div>© 2026 BlackSky AI. Premium automations for modern businesses.</div>
+  </footer>
+
+  <div class="lightbox" id="proofLightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" data-lightbox-close></div>
+    <div class="lightbox-content" role="dialog" aria-modal="true">
+      <button class="lightbox-close" type="button" data-lightbox-close>Close</button>
+      <img src="" alt="Client proof full view" />
+    </div>
+  </div>
+
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

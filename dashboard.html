@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackSky AI — Dashboard</title>
+  <link rel="icon" type="image/png" href="assets/faviconbai.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="sidebar-layout" id="dashboardRoot">
+    <aside class="sidebar">
+      <div class="brand" aria-label="BlackSky AI">
+        <img src="assets/xblogo.png" alt="BlackSky AI logo" />
+      </div>
+      <p class="notice">Live automation insights for your business.</p>
+      <nav>
+        <a href="setup-social-generate.html">Service Setup</a>
+        <a class="active" href="dashboard.html">Dashboard</a>
+        <a href="admin.html">Admin Inbox</a>
+        <a href="index.html">Return Home</a>
+      </nav>
+    </aside>
+
+    <main class="page-main">
+      <h1>Automation dashboard</h1>
+      <p class="notice" style="margin: 14px 0 12px;">Welcome back, <strong id="businessName">BlackSky Client</strong>.</p>
+      <p class="notice" id="automationNotice" style="margin: 0 0 24px;">Automation will activate soon.</p>
+
+      <div class="stats-row">
+        <div class="stat-card">
+          <h3 id="serviceCount">5 automations active</h3>
+          <span>Always‑on workflows</span>
+        </div>
+        <div class="stat-card">
+          <h3 id="postsGenerated">0</h3>
+          <span>Posts generated</span>
+        </div>
+        <div class="stat-card">
+          <h3 id="postsPublished">0</h3>
+          <span>Posts published</span>
+        </div>
+        <div class="stat-card">
+          <h3 id="activePlan">Executive</h3>
+          <span>Current plan</span>
+        </div>
+      </div>
+
+      <div class="section dashboard-grid">
+        <div class="form-card">
+          <h2>Service performance</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Service</th>
+                <th>Volume</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="serviceTable"></tbody>
+          </table>
+        </div>
+        <div class="form-card">
+          <h2>Platform activity</h2>
+          <div class="platform-list">
+            <div class="platform-item">
+              Instagram
+              <div class="progress"><span style="width: 82%;"></span></div>
+              <span id="igCount">0</span>
+            </div>
+            <div class="platform-item">
+              YouTube
+              <div class="progress"><span style="width: 68%;"></span></div>
+              <span id="ytCount">0</span>
+            </div>
+            <div class="platform-item">
+              LinkedIn
+              <div class="progress"><span style="width: 74%;"></span></div>
+              <span id="liCount">0</span>
+            </div>
+            <div class="platform-item">
+              X (Twitter)
+              <div class="progress"><span style="width: 63%;"></span></div>
+              <span id="xCount">0</span>
+            </div>
+            <div class="platform-item">
+              Pinterest
+              <div class="progress"><span style="width: 58%;"></span></div>
+              <span id="pinCount">0</span>
+            </div>
+            <div class="platform-item">
+              Facebook
+              <div class="progress"><span style="width: 71%;"></span></div>
+              <span id="fbCount">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h2>Recent automations</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Automation</th>
+              <th>Trigger</th>
+              <th>Result</th>
+              <th>Timestamp</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Instagram post published</td>
+              <td>Content calendar</td>
+              <td>Success</td>
+              <td>10:32 AM</td>
+            </tr>
+            <tr>
+              <td>Lead captured</td>
+              <td>Landing form</td>
+              <td>Qualified</td>
+              <td>9:58 AM</td>
+            </tr>
+            <tr>
+              <td>WhatsApp follow‑up sent</td>
+              <td>Abandoned cart</td>
+              <td>Delivered</td>
+              <td>9:12 AM</td>
+            </tr>
+            <tr>
+              <td>Invoice generated</td>
+              <td>Payment received</td>
+              <td>PDF sent</td>
+              <td>Yesterday</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

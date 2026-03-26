@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackSky AI — WhatsApp Automation</title>
+  <link rel="icon" type="image/png" href="assets/faviconbai.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="sidebar-layout">
+    <aside class="sidebar">
+      <div class="brand" aria-label="BlackSky AI">
+        <img src="assets/xblogo.png" alt="BlackSky AI logo" />
+      </div>
+      <p class="notice">Automate WhatsApp support, sales, and follow-ups.</p>
+      <nav>
+        <a href="setup-social-generate.html">Social (Generate + Post)</a>
+        <a href="setup-social-post.html">Social (Post Only)</a>
+        <a class="active" href="setup-whatsapp.html">WhatsApp</a>
+        <a href="setup-leads.html">Lead Gen + Email</a>
+        <a href="setup-sales-call.html">AI Sales Calls</a>
+        <a href="setup-tax-invoice.html">Tax Invoices</a>
+        <a href="index.html">Return Home</a>
+      </nav>
+    </aside>
+
+    <main class="page-main">
+      <h1>WhatsApp Automation</h1>
+      <p class="notice" style="margin: 12px 0 22px;">Your setup will be sent to admin. The blueprint JSON will be available for download in Admin Inbox.</p>
+
+      <div class="notice service-switcher">
+        <label for="serviceSwitch">Select service</label>
+        <select id="serviceSwitch" data-service-switch>
+          <option value="setup-social-generate.html">Social Media (Generate + Post)</option>
+          <option value="setup-social-post.html">Social Media (Post Only)</option>
+          <option value="setup-whatsapp.html" selected>WhatsApp Automation</option>
+          <option value="setup-leads.html">Lead Generation & Cold Email</option>
+          <option value="setup-sales-call.html">AI Sales Call Manager</option>
+          <option value="setup-tax-invoice.html">Tax Invoice Automation</option>
+        </select>
+      </div>
+      <form class="form-card blueprint-form" data-service="whatsapp">
+        <h2>Business profile</h2>
+        <div class="form-grid" style="margin-top: 16px;">
+          <div>
+            <label for="business_name">Business name *</label>
+            <input id="business_name" name="business_name" required />
+          </div>
+          <div>
+            <label for="business_category">Business category *</label>
+            <input id="business_category" name="business_category" required />
+          </div>
+          <div>
+            <label for="contact_name">Contact name *</label>
+            <input id="contact_name" name="contact_name" required />
+          </div>
+          <div>
+            <label for="contact_email">Contact email *</label>
+            <input id="contact_email" name="contact_email" type="email" required />
+          </div>
+        </div>
+
+        <h2 style="margin-top: 24px;">WhatsApp setup</h2>
+        <div class="form-grid" style="margin-top: 12px;">
+          <div>
+            <label for="whatsapp_business_name">WhatsApp business name</label>
+            <input id="whatsapp_business_name" name="whatsapp_business_name" />
+          </div>
+          <div>
+            <label for="phone_number_id">Phone number ID</label>
+            <input id="phone_number_id" name="phone_number_id" />
+          </div>
+          <div>
+            <label for="whatsapp_token">WhatsApp access token</label>
+            <input id="whatsapp_token" name="whatsapp_token" />
+          </div>
+          <div>
+            <label for="template_names">Template names</label>
+            <input id="template_names" name="template_names" placeholder="welcome, follow_up" />
+          </div>
+          <div>
+            <label for="opt_in_method">Opt-in method</label>
+            <input id="opt_in_method" name="opt_in_method" placeholder="Website form, QR" />
+          </div>
+          <div>
+            <label for="use_cases">Use cases</label>
+            <input id="use_cases" name="use_cases" placeholder="Support, sales, reminders" />
+          </div>
+          <div>
+            <label for="hours_of_operation">Hours of operation</label>
+            <input id="hours_of_operation" name="hours_of_operation" placeholder="10AM - 7PM" />
+          </div>
+          <div>
+            <label for="escalation_contact">Escalation contact</label>
+            <input id="escalation_contact" name="escalation_contact" placeholder="support@company.com" />
+          </div>
+        </div>
+
+        <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button primary" type="submit">Continue</button>
+          <a class="button ghost" href="index.html">Back to home</a>
+        </div>
+        <p class="notice" id="blueprintStatus" style="margin-top: 12px;"></p>
+      </form>
+    </main>
+  </div>
+
+  <script src="js/blueprint.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackSky AI — Social Media (Generate + Post)</title>
+  <link rel="icon" type="image/png" href="assets/faviconbai.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="sidebar-layout">
+    <aside class="sidebar">
+      <div class="brand" aria-label="BlackSky AI">
+        <img src="assets/xblogo.png" alt="BlackSky AI logo" />
+      </div>
+      <p class="notice">Setup your social media automation with AI content + posting.</p>
+      <nav>
+        <a class="active" href="setup-social-generate.html">Social (Generate + Post)</a>
+        <a href="setup-social-post.html">Social (Post Only)</a>
+        <a href="setup-whatsapp.html">WhatsApp</a>
+        <a href="setup-leads.html">Lead Gen + Email</a>
+        <a href="setup-sales-call.html">AI Sales Calls</a>
+        <a href="setup-tax-invoice.html">Tax Invoices</a>
+        <a href="index.html">Return Home</a>
+      </nav>
+    </aside>
+
+    <main class="page-main">
+      <h1>Social Media: Generate + Post</h1>
+      <p class="notice" style="margin: 12px 0 22px;">Your setup will be sent to admin. The blueprint JSON will be available for download in Admin Inbox.</p>
+
+      <div class="notice service-switcher">
+        <label for="serviceSwitch">Select service</label>
+        <select id="serviceSwitch" data-service-switch>
+          <option value="setup-social-generate.html" selected>Social Media (Generate + Post)</option>
+          <option value="setup-social-post.html">Social Media (Post Only)</option>
+          <option value="setup-whatsapp.html">WhatsApp Automation</option>
+          <option value="setup-leads.html">Lead Generation & Cold Email</option>
+          <option value="setup-sales-call.html">AI Sales Call Manager</option>
+          <option value="setup-tax-invoice.html">Tax Invoice Automation</option>
+        </select>
+      </div>
+      <form class="form-card blueprint-form" data-service="social_generate">
+        <h2>Business profile</h2>
+        <div class="form-grid" style="margin-top: 16px;">
+          <div>
+            <label for="business_name">Business name *</label>
+            <input id="business_name" name="business_name" required />
+          </div>
+          <div>
+            <label for="business_category">Business category *</label>
+            <input id="business_category" name="business_category" required />
+          </div>
+          <div>
+            <label for="website">Website</label>
+            <input id="website" name="website" placeholder="https://" />
+          </div>
+          <div>
+            <label for="location">Location</label>
+            <input id="location" name="location" placeholder="Mumbai, India" />
+          </div>
+          <div>
+            <label for="contact_name">Contact name *</label>
+            <input id="contact_name" name="contact_name" required />
+          </div>
+          <div>
+            <label for="contact_email">Contact email *</label>
+            <input id="contact_email" name="contact_email" type="email" required />
+          </div>
+          <div>
+            <label for="brand_voice">Brand voice</label>
+            <input id="brand_voice" name="brand_voice" placeholder="Luxury, minimal, confident" />
+          </div>
+          <div>
+            <label for="target_audience">Target audience</label>
+            <input id="target_audience" name="target_audience" placeholder="Founders, premium buyers" />
+          </div>
+        </div>
+
+        <h2 style="margin-top: 24px;">Content strategy</h2>
+        <div style="margin-top: 12px;">
+          <label for="product_description">Product / Service description</label>
+          <textarea id="product_description" name="product_description" rows="3"></textarea>
+        </div>
+        <div class="form-grid" style="margin-top: 16px;">
+          <div>
+            <label for="content_pillars">Content pillars</label>
+            <input id="content_pillars" name="content_pillars" placeholder="Education, testimonials, offers" />
+          </div>
+          <div>
+            <label for="key_offers">Key offers</label>
+            <input id="key_offers" name="key_offers" placeholder="Discounts, webinars, free audit" />
+          </div>
+          <div>
+            <label for="language">Language</label>
+            <input id="language" name="language" placeholder="English" />
+          </div>
+          <div>
+            <label for="cta_preference">CTA preference</label>
+            <input id="cta_preference" name="cta_preference" placeholder="DM, call, website" />
+          </div>
+        </div>
+        <div style="margin-top: 16px;">
+          <label for="competitors">Competitors / inspiration</label>
+          <textarea id="competitors" name="competitors" rows="2"></textarea>
+        </div>
+
+        <h2 style="margin-top: 24px;">Posting setup</h2>
+        <div class="form-grid" style="margin-top: 12px;">
+          <div>
+            <label for="platforms">Platforms</label>
+            <input id="platforms" name="platforms" placeholder="Instagram, LinkedIn, YouTube" />
+          </div>
+          <div>
+            <label for="posting_frequency">Posting frequency</label>
+            <input id="posting_frequency" name="posting_frequency" placeholder="Daily, 3x week" />
+          </div>
+          <div>
+            <label for="approval_mode">Approval mode</label>
+            <input id="approval_mode" name="approval_mode" placeholder="Auto post / Approval" />
+          </div>
+        </div>
+
+        <h2 style="margin-top: 24px;">Access details (optional)</h2>
+        <p class="notice" style="margin: 10px 0 16px;">Leave tokens blank if you do not have them yet.</p>
+        <div class="form-grid">
+          <div>
+            <label for="instagram_id">Instagram Business ID</label>
+            <input id="instagram_id" name="instagram_id" />
+          </div>
+          <div>
+            <label for="instagram_token">Instagram Access Token</label>
+            <input id="instagram_token" name="instagram_token" />
+          </div>
+          <div>
+            <label for="facebook_page_id">Facebook Page ID</label>
+            <input id="facebook_page_id" name="facebook_page_id" />
+          </div>
+          <div>
+            <label for="facebook_token">Facebook Access Token</label>
+            <input id="facebook_token" name="facebook_token" />
+          </div>
+          <div>
+            <label for="linkedin_org_id">LinkedIn Org ID</label>
+            <input id="linkedin_org_id" name="linkedin_org_id" />
+          </div>
+          <div>
+            <label for="linkedin_token">LinkedIn Access Token</label>
+            <input id="linkedin_token" name="linkedin_token" />
+          </div>
+          <div>
+            <label for="youtube_channel_id">YouTube Channel ID</label>
+            <input id="youtube_channel_id" name="youtube_channel_id" />
+          </div>
+          <div>
+            <label for="youtube_refresh_token">YouTube Refresh Token</label>
+            <input id="youtube_refresh_token" name="youtube_refresh_token" />
+          </div>
+          <div>
+            <label for="x_handle">X (Twitter) Handle</label>
+            <input id="x_handle" name="x_handle" />
+          </div>
+          <div>
+            <label for="x_token">X Access Token</label>
+            <input id="x_token" name="x_token" />
+          </div>
+          <div>
+            <label for="pinterest_account_id">Pinterest Account ID</label>
+            <input id="pinterest_account_id" name="pinterest_account_id" />
+          </div>
+          <div>
+            <label for="pinterest_token">Pinterest Access Token</label>
+            <input id="pinterest_token" name="pinterest_token" />
+          </div>
+        </div>
+
+        <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="button primary" type="submit">Continue</button>
+          <a class="button ghost" href="index.html">Back to home</a>
+        </div>
+        <p class="notice" id="blueprintStatus" style="margin-top: 12px;"></p>
+      </form>
+    </main>
+  </div>
+
+  <script src="js/blueprint.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

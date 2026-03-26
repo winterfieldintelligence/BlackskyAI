@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlackSky AI — Select Plan</title>
+  <link rel="icon" type="image/png" href="assets/faviconbai.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-luxe">
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="brand" aria-label="BlackSky AI">
+        <img src="assets/xblogo.png" alt="BlackSky AI logo" />
+      </div>
+      <button class="mobile-toggle" id="navToggle">Menu</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#case-studies">Case Studies</a>
+        <a class="nav-cta" href="setup-social-generate.html">Create Account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section container" id="planRoot">
+    <div class="plan-header">
+      <h1>Select your 30‑day plan</h1>
+      <p class="notice" id="planServiceNote">Loading selected services...</p>
+    </div>
+
+    <div id="planServiceList" class="plan-services"></div>
+
+    <div class="plan-summary">
+      <div>
+        <h3>Cart summary</h3>
+        <p id="planSummaryText">Select a plan to see subtotal.</p>
+      </div>
+      <div class="plan-total">
+        <span>Subtotal</span>
+        <strong id="planSubtotal">₹0</strong>
+      </div>
+      <button class="button primary" id="proceedPayment" disabled>Proceed</button>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
