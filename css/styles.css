@@ -131,7 +131,7 @@ img {
 
 .hero-image {
   min-height: calc(100vh - 64px);
-  background: url("../assets/back.png") center center / cover no-repeat;
+  background: url("../assets/back.webp") center center / cover no-repeat;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -1089,7 +1089,7 @@ label {
 
   .hero-image {
     min-height: calc(100vh - 60px);
-    background: url("../assets/back.png") center center / cover no-repeat;
+    background: url("../assets/back-mobile.webp") center center / cover no-repeat;
     padding-bottom: 48px;
   }
 
